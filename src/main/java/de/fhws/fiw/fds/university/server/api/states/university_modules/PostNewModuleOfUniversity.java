@@ -23,6 +23,5 @@ public class PostNewModuleOfUniversity extends AbstractPostRelationState<Respons
 
     @Override protected void defineTransitionLinks( )
     {
-    addLink(UniversityModuleUri.REL_PATH_ID, UniversityModuleRelTypes.GET_SINGLE_MODULE);
     }
 }

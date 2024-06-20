@@ -21,12 +21,7 @@ public class GetAllModelsOfUniversity extends AbstractGetCollectionRelationState
                 getAcceptRequestHeader(),
                 this.primaryId);
 
-
-        addLink(UniversityModuleUri.REL_PATH_SHOW_ALL,
-                UniversityModuleRelTypes.GET_ALL_MODULES,
-                getAcceptRequestHeader(),
-                this.primaryId);
-
         addLink(UniversityModuleUri.REL_PATH_ID, UniversityModuleRelTypes.GET_SINGLE_MODULE, getAcceptRequestHeader());
+        addLink(UniversityModuleUri.UNIVERSITY, UniversityModuleRelTypes.GET_SINGLE_UNIVERSITY, getAcceptRequestHeader(), this.primaryId);
     }
 }

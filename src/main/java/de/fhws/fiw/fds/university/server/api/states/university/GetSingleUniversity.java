@@ -9,8 +9,6 @@ import de.fhws.fiw.fds.sutton.server.api.states.get.AbstractGetState;
 import de.fhws.fiw.fds.sutton.server.database.results.SingleModelResult;
 import de.fhws.fiw.fds.sutton.server.models.AbstractModel;
 import de.fhws.fiw.fds.university.server.api.models.University;
-import de.fhws.fiw.fds.university.server.api.states.university_modules.UniversityModuleRelTypes;
-import de.fhws.fiw.fds.university.server.api.states.university_modules.UniversityModuleUri;
 import de.fhws.fiw.fds.university.server.database.DaoFactory;
 import jakarta.ws.rs.core.Response;
 

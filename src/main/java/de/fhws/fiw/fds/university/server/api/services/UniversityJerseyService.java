@@ -26,11 +26,10 @@ public class UniversityJerseyService extends AbstractJerseyService {
             @DefaultValue("0") @QueryParam("offset") int offset,
             @DefaultValue("20") @QueryParam("size") int size) {
         try {
-            final var info = new GetAllUniversities(
+            return new GetAllUniversities(
                     this.serviceContext,
                     new QueryByNameAndCountry<>(name, country, offset, size)
             ).execute();
-            return info;
         } catch (SuttonWebAppException e) {
             throw new WebApplicationException(e.getExceptionMessage(), e.getStatus().getCode());
         }
@@ -104,7 +103,6 @@ public class UniversityJerseyService extends AbstractJerseyService {
     }
 
 
-    // fehler dataType
     @GET
     @Path("{universityId: \\d+}/module/{moduleId: \\d+}")
     @Produces({MediaType.APPLICATION_JSON})

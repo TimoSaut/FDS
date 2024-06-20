@@ -30,7 +30,7 @@ public class DeleteSingleModuleOfUniversity extends AbstractDeleteRelationState<
     @Override
     protected void defineTransitionLinks() {
         addLink(UniversityModuleUri.REL_PATH,
-                UniversityModuleRelTypes.GET_ALL_LINKED_MODULES,
+                UniversityModuleRelTypes.GET_ALL_MODULES,
                 getAcceptRequestHeader(),
                 this.primaryId);
     }

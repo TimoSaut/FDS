@@ -6,6 +6,7 @@ public interface UniversityModuleUri {
 
     String SHOW_ALL_PARAMETER = "showAll";
     String PATH_ELEMENT = "universities/{id}/module";
+    String UNIVERSITY = "universities/{id}";
 
     String REL_PATH = Start.CONTEXT_PATH + "/api/" + PATH_ELEMENT;
     String REL_PATH_SHOW_ALL = Start.CONTEXT_PATH + "/api/" + PATH_ELEMENT + "?" + SHOW_ALL_PARAMETER + "=true";
